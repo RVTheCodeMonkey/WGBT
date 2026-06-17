@@ -1,0 +1,23 @@
+{
+    "name": "Hitte op het Werk Check",
+    "short_name": "WBGT Check",
+    "description": "Bereken of de actiewaarden voor hitte op het werk zijn overschreden.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f4f7f6",
+    "theme_color": "#e67e22",
+    "lang": "nl",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

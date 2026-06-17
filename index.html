@@ -2,8 +2,14 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#e67e22">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
     <title>Wettelijke Hitte-op-het-Werk Calculator (België)</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -129,6 +135,12 @@
             margin-top: 20px;
             line-height: 1.4;
         }
+        .ad-container {
+            max-width: 500px;
+            margin: 20px auto 0;
+            min-height: 100px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -178,6 +190,16 @@
     <div class="disclaimer" data-i18n="disclaimer">
         * <strong>Belangrijke beperking:</strong> Deze tool schat de WBGT-index op basis van de tabel op p. 17 van de FOD-brochure. Dit is geldig in afwezigheid van directe zonnestraling of stralingswarmte van machines. Indien er wél stralingswarmte aanwezig is, dient er een fysieke meting met een zwarte-bolthermometer te gebeuren.
     </div>
+</div>
+
+<div class="ad-container">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </div>
 
 <script>
@@ -382,6 +404,12 @@ function calculateMetrics() {
 }
 
 translatePage('nl');
+</script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+}
 </script>
 
 </body>
